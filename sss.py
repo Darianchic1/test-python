@@ -147,3 +147,10 @@ my_shape.set_color("yellow")
 my_shape.set_radius(12)
 my_shape.info()
 my_shape.area()
+
+#______________________________
+print('1. неверный защищённый модификатор: по заданию был protected, а не private, '
+      '2. конструктор должен не инициализировать атрибуты, а объявлять: self._position = None, '
+      '3. в дочерних классах я бы написал так:  def __init__(self, position, scale, color, side1, side2):'
+      '            super().__init__(position, scale, color)'
+      '4. очень страшное создание объектов и их инициализация, можно с учётом выше исправленных ошибок написать так: C = Circle([58, -94], 56, red, 5), для других фигур аналогично...')
